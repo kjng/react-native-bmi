@@ -31,6 +31,7 @@ export default class BMI extends Component {
     console.log(this.state);
     return (
       <View style={styles.container}>
+        <Text style={styles.title}>Calculate Your BMI!</Text>
         <View style={styles.group}>
           <Text style={styles.label}>Weight (LB)</Text>
           <View style={styles.inputContainer}>
@@ -79,6 +80,10 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     height: 40
+  },
+  title: {
+    fontSize: 30,
+    marginBottom: 20
   },
   input: {
     padding: 10,
